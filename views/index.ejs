@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+    
 </head>
 <body>
     
@@ -33,6 +35,8 @@
 <!--PLUGIN-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<!--for scroling text in home page-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <!--FONT AWESOME-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -56,7 +60,7 @@
 <!--NAV-BAR-->
 <header>
 <div class="topnav" id="myTopnav">
-  <a class="logo">LEVIOOSA</a>
+  <a class="logo">GroMart</a>
   <a href="#team">Sitemap</a>
   <a href="#team">Team</a>
   <div class="dropdown">
@@ -104,8 +108,8 @@
 <tr>
 <td>
 <section>
-<h5 class="sub-title">Welcome To LEVIOOSA Technologies</h5>
-<h1 class="title">AWESOME IT SERVICES FOR YOUR BUSINESS</h1>
+<h5 class="sub-title">Welcome To GroMart</h5>
+<h1 class="title" id="element">YOUR ULTIMATE PARTNER IN EVERY SALES JOURNEY</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <a href="#sections" class="btn1">Explore More</a>
 </section>
@@ -125,12 +129,12 @@
 <h5 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
 </div>
 <div class="card inline-photo show-on-scroll">
-<i class="fa fa-handshake-o"></i>
-<h3>Consulting Services</h3>
+<i class="fa-solid fa-indian-rupee-sign"></i>
+<h3>Market Price</h3>
 </div>
 <div class="card inline-photo show-on-scroll">
-<i class="fa fa-thumbs-up"></i>
-<h3>Recruiting Services</h3>
+<i class="fa-solid fa-newspaper"></i>
+<h3>News</h3>
 </div>
 <div class="card inline-photo show-on-scroll">
 <i class="fa fa-line-chart"></i>
@@ -312,8 +316,13 @@ Copyright © 2021 LEVIOOSA, All Right Reserved || Designed By: Mahesh
 
 <!--JAVASCRIPT-->
 <script src="../javascripts/index.js"></script>
-
-  
+<!-- Js code for typed element which is have id element -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['YOUR ULTIMATE PARTNER IN EVERY SALES JOURNEY','CONNECTING COMMERCE, CULTIVATING GROWTH','NURTURING BUSINESSES, FOSTERING SUCCESS.','EMPOWERING COMMERCE, ENABLING PROSPERITY','CULTIVATING GROWTH, CONNECTING FUTURES.','SEEDS OF SUCCESS, ROOTED IN CONNECTIVITY','WHERE COMMERCE BLOSSOMS, GROWTH FLOURISHES.','UNLEASHING POTENTIAL, ONE CONNECTION AT A TIME.','HARVESTING PROSPERITY, GROWING TOGETHER','BRIDGING BUSINESSES, SOWING SEEDS OF SUCCESS.','FOSTERING GROWTH, BUILDING CONNECTIONS.','THRIVING TOGETHER, GROWING BEYOND BOUNDARIES.', 'WE HELP YOU TO GROW YOUR BUSINESS'],
+    typeSpeed: 60,
+  });
+</script> 
   <div class="credits">W3SCHOOLS, UNSPLASH, STACKOVERFLOW</div>
 </body>
 </html>
